@@ -3,7 +3,7 @@ os.system("cls")
 
 
 sub_ids = []
-guild_id = input("Guild ID: ")
+guild_id = input("Guild ID:1018909627515146262 ")
 
 def get_x_properties():
     data = {
@@ -30,7 +30,7 @@ dcfduid = response.headers['Set-Cookie'].split('__dcfduid=')[1].split(';')[0]
 sdcfduid = response.headers['Set-Cookie'].split('__sdcfduid=')[1].split(';')[0]
 
 try:
-    with open("tokens.txt", "r") as f:  
+    with open("tokens.txt",20 "r") as f:  
         tokens = f.read().splitlines()
     for token in tokens:
         data = requests.get("https://discord.com/api/v9/users/@me/guilds/premium/subscription-slots", 
